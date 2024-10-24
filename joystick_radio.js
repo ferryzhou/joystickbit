@@ -1,20 +1,18 @@
 joystickbit.onButtonEvent(joystickbit.JoystickBitPin.P14, joystickbit.ButtonType.down, function () {
-    joystickbit.Vibration_Motor(100)
-    basic.showString("E")
-    radio.sendValue("z", 0)
+    // basic.showString("E")
+    radio.sendValue("Button", 14)
 })
 joystickbit.onButtonEvent(joystickbit.JoystickBitPin.P15, joystickbit.ButtonType.down, function () {
-    joystickbit.Vibration_Motor(100)
-    basic.showString("F")
+    // basic.showString("F")
+    radio.sendValue("Button", 15)
 })
 joystickbit.onButtonEvent(joystickbit.JoystickBitPin.P13, joystickbit.ButtonType.down, function () {
-    joystickbit.Vibration_Motor(100)
-    basic.showString("D")
-    radio.sendValue("z", 100)
+    // basic.showString("D")
+    radio.sendValue("Button", 13)
 })
 joystickbit.onButtonEvent(joystickbit.JoystickBitPin.P12, joystickbit.ButtonType.down, function () {
-    joystickbit.Vibration_Motor(100)
-    basic.showString("C")
+    // basic.showString("C")
+    radio.sendValue("Button", 12)
 })
 joystickbit.initJoystickBit()
 music.startMelody(music.builtInMelody(Melodies.BaDing), MelodyOptions.Once)
